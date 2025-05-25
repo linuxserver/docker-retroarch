@@ -1,0 +1,28 @@
+---
+
+# jenkins variables
+project_name: docker-retroarch
+external_type: na
+custom_version_command: "curl -s -L https://ppa.launchpadcontent.net/libretro/stable/ubuntu/dists/noble/main/binary-amd64/Packages.gz | gunzip |grep -A 7 -m 1 'Package: retroarch' | awk -F ': ' '/Version/{print $2;exit}' | sed 's|[+~,]||g'"
+release_type: stable
+release_tag: latest
+ls_branch: master
+build_armhf: false
+repo_vars:
+  - BUILD_VERSION_ARG = 'RETROARCH_VERSION'
+  - LS_USER = 'linuxserver'
+  - LS_REPO = 'docker-retroarch'
+  - CONTAINER_NAME = 'retroarch'
+  - DOCKERHUB_IMAGE = 'linuxserver/retroarch'
+  - DEV_DOCKERHUB_IMAGE = 'lsiodev/retroarch'
+  - PR_DOCKERHUB_IMAGE = 'lspipepr/retroarch'
+  - DIST_IMAGE = 'ubuntu'
+  - MULTIARCH = 'true'
+  - CI = 'true'
+  - CI_WEB = 'true'
+  - CI_PORT = '3001'
+  - CI_SSL = 'true'
+  - CI_DELAY = '120'
+  - CI_DOCKERENV = 'TZ=US/Pacific'
+  - CI_AUTH = 'user:password'
+  - CI_WEBPATH = ''
