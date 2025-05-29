@@ -2,8 +2,6 @@ if [ ! -d "${HOME}/.config/retroarch" ]; then
   mkdir -p ${HOME}/.config/retroarch
   cp -r /usr/share/libretro/* ${HOME}/.config/retroarch/
   mv ${HOME}/.config/retroarch/info ${HOME}/.config/retroarch/cores
-  cp /defaults/retroarch.cfg ${HOME}/.config/retroarch/
-  sudo chmod 777 /tmp/selkies_js.log
 fi
 
 retroarch -f
