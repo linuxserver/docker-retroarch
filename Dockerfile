@@ -11,10 +11,10 @@ LABEL maintainer="thelamer"
 ENV TITLE=RetroArch
 
 RUN \
-   echo "**** add icon ****" && \
-   curl -o \
-     /usr/share/selkies/www/icon.png \
-     https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/selkies-logo.png && \
+  echo "**** add icon ****" && \
+  curl -o \
+    /usr/share/selkies/www/icon.png \
+    https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/selkies-logo.png && \
   echo "**** install packages ****" && \
   apt-key adv \
     --keyserver hkp://keyserver.ubuntu.com:80 \
@@ -26,7 +26,16 @@ RUN \
   apt-get install -y --no-install-recommends \
     libretro-core-info \
     retroarch \
-    retroarch-assets && \
+    retroarch-assets \
+    unzip && \
+  echo "**** install retroarch profiles ****" && \
+  curl -o \
+    /tmp/autoconfig.zip \
+    https://buildbot.libretro.com/assets/frontend/autoconfig.zip && \
+  mkdir -p /usr/share/libretro/autoconfig && \
+  unzip \
+    /tmp/autoconfig.zip \
+    -d /usr/share/libretro/autoconfig && \
   echo "**** cleanup ****" && \
   apt-get clean && \
   rm -rf \

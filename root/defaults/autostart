@@ -4,4 +4,4 @@ if [ ! -d "${HOME}/.config/retroarch" ]; then
   mv ${HOME}/.config/retroarch/info ${HOME}/.config/retroarch/cores
 fi
 
-retroarch -f
+xterm -e /usr/bin/retroarch -f
