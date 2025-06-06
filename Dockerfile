@@ -1,3 +1,4 @@
+# syntax=docker/dockerfile:1
 FROM ghcr.io/linuxserver/baseimage-selkies:ubuntunoble
 
 # set version label
@@ -37,6 +38,9 @@ RUN \
     /tmp/autoconfig.zip \
     -d /usr/share/libretro/autoconfig && \
   echo "**** cleanup ****" && \
+  printf \
+    "Linuxserver.io version: ${VERSION}\nBuild-date: ${BUILD_DATE}" \
+    > /build_version && \
   apt-get clean && \
   rm -rf \
     /tmp/* \
