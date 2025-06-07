@@ -63,6 +63,8 @@ The application can be accessed at:
 
 * https://yourhost:3001/
 
+**Note: In pure CPU mode Retroarch will use LLVMPipe for menu rendering at a maximum framerate, when in game this is less of an issue. You can configure things like the menu refresh rate in your Retroarch settings or mount in an Nvidia GPU**
+
 ### Strict reverse proxies
 
 This image uses a self-signed certificate by default. This naturally means the scheme is `https`.
