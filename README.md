@@ -63,7 +63,7 @@ The application can be accessed at:
 
 * https://yourhost:3001/
 
-**Note: In pure CPU mode Retroarch will use LLVMPipe for menu rendering at a maximum framerate, when in game this is less of an issue. You can configure things like the menu refresh rate in your Retroarch settings or mount in an Nvidia GPU**
+**Note: In pure CPU mode RetroArch will use LLVMPipe for menu rendering, when in game this is less of an issue. You can configure things like the menu refresh rate in your RetroArch settings or mount in an Nvidia GPU. When running with an Nvidia GPU it will be necesarry to right click the desktop and re-launch RetroArch on your first launch only.**
 
 ### Strict reverse proxies
 
@@ -123,8 +123,8 @@ Containers are configured using parameters passed at runtime (such as those abov
 
 | Parameter | Function |
 | :----: | --- |
-| `-p 3000:3000` | Retroarch desktop gui HTTP must be proxied. |
-| `-p 3001:3001` | Retroarch desktop gui HTTPS. |
+| `-p 3000:3000` | RetroArch desktop gui HTTP must be proxied. |
+| `-p 3001:3001` | RetroArch desktop gui HTTPS. |
 | `-e PUID=1000` | for UserID - see below for explanation |
 | `-e PGID=1000` | for GroupID - see below for explanation |
 | `-e TZ=Etc/UTC` | specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List). |

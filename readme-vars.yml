@@ -24,8 +24,8 @@ param_volumes:
   - {vol_path: "/config", vol_host_path: "/path/to/config", desc: "Users home directory in the container, stores local files and settings"}
 param_usage_include_ports: true
 param_ports:
-  - {external_port: "3000", internal_port: "3000", port_desc: "Retroarch desktop gui HTTP must be proxied."}
-  - {external_port: "3001", internal_port: "3001", port_desc: "Retroarch desktop gui HTTPS."}
+  - {external_port: "3000", internal_port: "3000", port_desc: "RetroArch desktop gui HTTP must be proxied."}
+  - {external_port: "3001", internal_port: "3001", port_desc: "RetroArch desktop gui HTTPS."}
 custom_params:
   - {name: "shm-size", name_compose: "shm_size", value: "1gb", desc: "This is needed for retroarch to function."}
 opt_security_opt_param: true
@@ -38,7 +38,8 @@ app_setup_block: |
 
   * https://yourhost:3001/
 
-  **Note: In pure CPU mode Retroarch will use LLVMPipe for menu rendering at a maximum framerate, when in game this is less of an issue. You can configure things like the menu refresh rate in your Retroarch settings or mount in an Nvidia GPU**
+  **Note: In pure CPU mode RetroArch will use LLVMPipe for menu rendering, when in game this is less of an issue. You can configure things like the menu refresh rate in your RetroArch settings or mount in an Nvidia GPU. When running with an Nvidia GPU it will be necesarry to right click the desktop and re-launch RetroArch on your first launch only.**
+
 # init diagram
 init_diagram: |
   "retroarch:latest": {
