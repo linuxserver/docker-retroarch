@@ -65,6 +65,13 @@ The application can be accessed at:
 
 **Note: In pure CPU mode RetroArch will use LLVMPipe for menu rendering, when in game this is less of an issue. You can configure things like the menu refresh rate in your RetroArch settings or mount in an Nvidia GPU. When running with an Nvidia GPU it will be necesarry to right click the desktop and re-launch RetroArch on your first launch only.**
 
+### Security
+
+>[!WARNING]
+>Do not put this on the Internet if you do not know what you are doing.
+
+By default this container has no authentication and the optional environment variables `CUSTOM_USER` and `PASSWORD` to enable basic http auth via the embedded NGINX server should only be used to locally secure the container from unwanted access on a local network. If exposing this to the Internet we recommend putting it behind a reverse proxy, such as [SWAG](https://github.com/linuxserver/docker-swag), and ensuring a secure authentication solution is in place. From the web interface a terminal can be launched and it is configured for passwordless sudo, so anyone with access to it can install and run whatever they want along with probing your local network.
+
 ### Strict reverse proxies
 
 This image uses a self-signed certificate by default. This naturally means the scheme is `https`.
