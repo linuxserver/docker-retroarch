@@ -1118,7 +1118,7 @@ mesa-libgallium                                                               24
 mesa-va-drivers                                                               24.2.8-1ubuntu1~24.04.1                 deb                         
 mesa-vulkan-drivers                                                           24.2.8-1ubuntu1~24.04.1                 deb                         
 mount                                                                         2.39.3-9ubuntu6.2                       deb                         
-msgpack                                                                       1.1.0                                   python                      
+msgpack                                                                       1.1.1                                   python                      
 ncurses-base                                                                  6.4+20240113-1ubuntu2                   deb                         
 ncurses-bin                                                                   6.4+20240113-1ubuntu2                   deb                         
 ncurses-term                                                                  6.4+20240113-1ubuntu2                   deb                         
@@ -1142,7 +1142,7 @@ perl-base                                                                     5.
 perl-modules-5.38                                                             5.38.2-3.2ubuntu0.1                     deb                         
 pillow                                                                        11.2.1                                  python                      
 pinentry-curses                                                               1.2.1-3ubuntu5                          deb                         
-pixelflux                                                                     1.0.4                                   python                      
+pixelflux                                                                     1.0.7                                   python                      
 pkgconf                                                                       1.8.1-2build1                           deb                         
 pkgconf-bin                                                                   1.8.1-2build1                           deb                         
 polkitd                                                                       124-2ubuntu1.24.04.2                    deb                         
