@@ -576,9 +576,9 @@ libapt-pkg6.0t64                                                              2.
 libarchive13t64                                                               3.7.2-2ubuntu0.4                        deb                            
 libargon2-1                                                                   0~20190702+dfsg-4build1                 deb                            
 libasan8                                                                      14.2.0-4ubuntu2~24.04                   deb                            
-libasound2-data                                                               1.2.11-1build2                          deb                            
+libasound2-data                                                               1.2.11-1ubuntu0.1                       deb                            
 libasound2-plugins                                                            1.2.7.1-1ubuntu5                        deb                            
-libasound2t64                                                                 1.2.11-1build2                          deb                            
+libasound2t64                                                                 1.2.11-1ubuntu0.1                       deb                            
 libass9                                                                       1:0.17.1-2build1                        deb                            
 libassuan0                                                                    2.5.6-1build1                           deb                            
 libasyncns0                                                                   0.8-6build4                             deb                            
@@ -1165,7 +1165,7 @@ perl-modules-5.38                                                             5.
 perl-openssl-defaults                                                         7build3                                 deb                            
 pillow                                                                        11.2.1                                  python                         
 pinentry-curses                                                               1.2.1-3ubuntu5                          deb                            
-pixelflux                                                                     1.1.0                                   python                         
+pixelflux                                                                     1.1.1                                   python                         
 pkgconf                                                                       1.8.1-2build1                           deb                            
 pkgconf-bin                                                                   1.8.1-2build1                           deb                            
 polkitd                                                                       124-2ubuntu1.24.04.2                    deb                            
