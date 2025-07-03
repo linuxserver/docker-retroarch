@@ -42,7 +42,6 @@ app_setup_block: |
   * https://yourhost:3001/
 
   **Note: In pure CPU mode RetroArch will use LLVMPipe for menu rendering, when in game this is less of an issue. You can configure things like the menu refresh rate in your RetroArch settings or mount in an Nvidia GPU. When running with an Nvidia GPU it will be necesarry to right click the desktop and re-launch RetroArch on your first launch only.**
-
 # init diagram
 init_diagram: |
   "retroarch:latest": {
