@@ -15,7 +15,7 @@ RUN \
   echo "**** add icon ****" && \
   curl -o \
     /usr/share/selkies/www/icon.png \
-    https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/selkies-logo.png && \
+    https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/retroarch-logo.png && \
   echo "**** install packages ****" && \
   apt-key adv \
     --keyserver hkp://keyserver.ubuntu.com:80 \
