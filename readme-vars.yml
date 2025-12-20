@@ -109,4 +109,5 @@ init_diagram: |
   "retroarch:latest" <- Base Images
 # changelog
 changelogs:
+  - {date: "20.12.25:", desc: "Add Wayland init logic."}
   - {date: "25.05.25:", desc: "Initial Version."}
