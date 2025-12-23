@@ -1,0 +1,12 @@
+if [ ! -d "${HOME}/.config/retroarch" ]; then
+  mkdir -p ${HOME}/.config/retroarch
+  cp -r /usr/share/libretro/* ${HOME}/.config/retroarch/
+  mv ${HOME}/.config/retroarch/info ${HOME}/.config/retroarch/cores
+  # Pin menu to 15 FPS if not nvidia
+  if ! which nvidia-smi; then
+    echo 'video_refresh_rate = "15.000000"' > ${HOME}/.config/retroarch/retroarch.cfg
+    echo 'vrr_runloop_enable = "true"' >> ${HOME}/.config/retroarch/retroarch.cfg
+  fi
+fi
+
+foot -e /usr/bin/retroarch -f
