@@ -975,8 +975,8 @@ libsqlite3-0                                                                  3.
 libsratom-0-0                                                                 0.6.16-1build1                         deb                         
 libsrt1.5-gnutls                                                              1.5.3-1build2                          deb                         
 libss2                                                                        1.47.0-2.4~exp1ubuntu4.1               deb                         
-libssh-4                                                                      0.10.6-2ubuntu0.3                      deb                         
-libssh-gcrypt-4                                                               0.10.6-2ubuntu0.3                      deb                         
+libssh-4                                                                      0.10.6-2ubuntu0.4                      deb                         
+libssh-gcrypt-4                                                               0.10.6-2ubuntu0.4                      deb                         
 libssl3t64                                                                    3.0.13-0ubuntu3.7                      deb                         
 libstartup-notification0                                                      0.12-6build3                           deb                         
 libstdc++-13-dev                                                              13.3.0-6ubuntu2~24.04.1                deb                         
