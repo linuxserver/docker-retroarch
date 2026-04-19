@@ -38,7 +38,6 @@ RUN \
     "Linuxserver.io version: ${VERSION}\nBuild-date: ${BUILD_DATE}" \
     > /build_version && \
   apt-get clean && \
-  apt-get clean && \
   rm -rf \
     /config/.cache \
     /config/.launchpadlib \
