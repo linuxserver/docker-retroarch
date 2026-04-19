@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM ghcr.io/linuxserver/baseimage-selkies:arm64v8-ubuntunoble
+FROM ghcr.io/linuxserver/baseimage-selkies:arm64v8-ubunturesolute
 
 # set version label
 ARG BUILD_DATE
@@ -18,12 +18,7 @@ RUN \
     /usr/share/selkies/www/icon.png \
     https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/retroarch-logo.png && \
   echo "**** install packages ****" && \
-  apt-key adv \
-    --keyserver hkp://keyserver.ubuntu.com:80 \
-    --recv-keys 3B2BA0B6750986899B189AFF18DAAE7FECA3745F && \
-  echo \
-    "deb https://ppa.launchpadcontent.net/libretro/stable/ubuntu noble main" > \
-    /etc/apt/sources.list.d/retroarch.list && \
+  add-apt-repository ppa:libretro/stable && \
   apt-get update && \
   apt-get install -y --no-install-recommends \
     libretro-core-info \
@@ -43,7 +38,10 @@ RUN \
     "Linuxserver.io version: ${VERSION}\nBuild-date: ${BUILD_DATE}" \
     > /build_version && \
   apt-get clean && \
+  apt-get clean && \
   rm -rf \
+    /config/.cache \
+    /config/.launchpadlib \
     /tmp/* \
     /var/lib/apt/lists/* \
     /var/tmp/*
